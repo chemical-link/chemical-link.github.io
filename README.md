@@ -2,6 +2,8 @@
 
 A static, GitHub Pages-ready library of the references in `queries_updated.xlsx` → `Sheet1`. The first link on a chemical's row and every following link until the next chemical belong to that chemical. The site preserves all 59 spreadsheet references across 19 chemicals.
 
+Live site: https://chemical-link.github.io/
+
 ## View locally
 
 From this directory, run:
