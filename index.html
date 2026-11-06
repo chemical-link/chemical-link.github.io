@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173b3b">
+  <meta name="description" content="Browse research references by cosmetic ingredient, with article titles, journals, abstracts, and source links.">
+  <title>Chemical Evidence Atlas</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to papers</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="./" aria-label="Chemical Evidence Atlas home">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span><strong>Chemical Evidence</strong><small>ATLAS</small></span>
+      </a>
+      <span class="header-label">A browsable research library</span>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="shell hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> RESEARCH INDEX</p>
+          <h1 id="page-title">Explore the research<br><em>behind each ingredient.</em></h1>
+          <p class="hero-description">A clear view of the references collected for each chemical: publication details, abstracts when available, and a direct path to the source.</p>
+          <div class="hero-stats" aria-label="Library totals">
+            <div><strong id="chemical-total">19</strong><span>chemicals</span></div>
+            <span class="stat-divider" aria-hidden="true"></span>
+            <div><strong id="paper-total">59</strong><span>references</span></div>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
+          <div class="atom atom-one"></div><div class="atom atom-two"></div><div class="atom atom-three"></div><div class="atom atom-four"></div>
+          <div class="art-card"><span class="art-card-kicker">REFERENCE LIBRARY</span><span class="art-card-line long"></span><span class="art-card-line"></span><span class="art-card-line short"></span><span class="art-card-foot">CHEMICAL · PAPER · SOURCE</span></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="shell content-layout">
+      <aside class="sidebar" aria-label="Chemical directory">
+        <div class="sidebar-card">
+          <div class="sidebar-heading"><span class="sidebar-overline">BROWSE BY</span><h2>Chemical</h2></div>
+          <nav id="chemical-nav" aria-label="Select a chemical"><span class="loading-note">Loading directory…</span></nav>
+        </div>
+        <p class="sidebar-note">References are grouped according to the supplied spreadsheet. A listing does not by itself establish a chemical’s effects or safety.</p>
+      </aside>
+
+      <div class="library">
+        <div class="library-intro">
+          <div><p class="section-kicker">THE LIBRARY</p><h2>Research references</h2></div>
+          <p>Find a chemical, scan the publications, and open an abstract for more detail.</p>
+        </div>
+
+        <div class="toolbar" aria-label="Filter references">
+          <div class="field select-field">
+            <label for="chemical-select">Chemical</label>
+            <div class="input-wrap"><select id="chemical-select" aria-label="Filter by chemical"><option value="all">All chemicals</option></select><span class="select-chevron" aria-hidden="true"></span></div>
+          </div>
+          <div class="field search-field">
+            <label for="paper-search">Search references</label>
+            <div class="input-wrap search-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg><input id="paper-search" type="search" placeholder="Title, journal, or abstract" autocomplete="off"></div>
+          </div>
+          <button id="clear-filters" class="clear-button" type="button" hidden>Clear filters</button>
+        </div>
+
+        <div class="results-bar"><p id="result-count" role="status" aria-live="polite">Loading references…</p><span id="view-label">GROUPED BY CHEMICAL</span></div>
+        <div id="paper-groups" class="paper-groups"></div>
+        <div id="empty-state" class="empty-state" hidden><div class="empty-icon" aria-hidden="true">⌕</div><h3>No matching references</h3><p>Try another chemical or a broader search term.</p><button type="button" id="empty-clear">Show all references</button></div>
+        <div id="error-state" class="empty-state" hidden><h3>References could not be loaded</h3><p>Start a local web server or refresh this page to try again.</p></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="shell footer-inner"><div><strong>Chemical Evidence Atlas</strong><p>Organized from the provided chemical reference spreadsheet.</p></div><a href="#page-title">Back to top ↑</a></div></footer>
+</body>
+</html>
