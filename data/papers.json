@@ -487,13 +487,13 @@
         },
         {
           "sourceRow": 55,
-          "title": "Embase record L2004946833",
-          "journal": "Embase",
-          "abstract": "",
-          "year": "",
-          "type": "database record",
-          "doi": "",
-          "url": "https://www.embase.com/records?id=L2004946833"
+          "title": "Effect of emollients on UV filter absorbance and sunscreen efficiency",
+          "journal": "Journal of Photochemistry and Photobiology B: Biology",
+          "abstract": "The idea of increasing the performance of sunscreens without adding more UV-filters is very attractive. Early studies reported an influence of solvents on the absorbing properties of UV-absorbers which was shown to be connected to the solvent polarity. However, the polarity differed a lot between tested solvents and most were unsuitable UV-filter solubilizers. The aim of the present study was to focus exclusively on emollients pertinent for sunscreens and investigate their impact on the performance of UV-filter combinations. The UV absorbance of Bis-ethylhexyloxyphenol Methoxyphenyl Triazine, Ethylhexyl Triazone, Diethylamino Hydroxybenzoyl Hexyl Benzoate, and Ethylhexyl Methoxycinnamate was measured in suncare relevant emollients comprising C12-15 Alkyl Benzoate, Dibutyl Adipate, Caprylic/Capric Triglyceride, Coco-caprylate, Isopropyl Myristate, Dicaprylyl Carbonate. The wavelength of maximum absorbance (λmax) and specific extinction at λmax (E1,1 (λmax)) were assessed for each UV-filter - emollient system. The performance of market relevant UV-filter combinations based on the studied UV-filters was simulated for each emollient with a computational method using the absorbance values measured for each UV-filter - emollient system. The difference in polarity of emollients led to a 2-3 nm bathochromic shift and a variation of the E1,1 (λmax) ranging from 4 to 20% for tested UV-filters. The emollient type showed nearly no influence on the sun protection factor (SPF) of market relevant UV-filter combinations probably due to a different influence an emollient shows on the UVB filters resulting in cancelling of the corresponding effect. Conversely, for all UV-filter combinations the UVA protection decreased with a decrease in the emollient polarity. Whilst the SPF was not impacted by standardly used cosmetic oils, the results advocate to use polar emollients to optimize the UVA protection. This is of advantage since polar emollients better dissolve crystalline UV-filters. From tested emollients, Dibutyl Adipate performed the best for both SPF and PPD factors.",
+          "year": 2020,
+          "type": "journal-article",
+          "doi": "10.1016/j.jphotobiol.2020.111818",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32065958/"
         }
       ]
     },
